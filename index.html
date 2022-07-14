@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script defer src="index.js"></script>
+    <title>B2Brain</title>
+  </head>
+  <body>
+    <main>
+      <div class="wrapper">
+        <div class="sideBar">
+          <div class="sideBarTitle">
+            <img src="assets/logo.svg" alt="B2Brain logo" />
+            <p>B2Brain</p>
+          </div>
+          <div class="sideBarContent">
+            <div class="title title1">
+              <img src="assets/home.svg" alt="home icon" />
+              <p>Dashboard</p>
+            </div>
+            <div class="title title2">
+              <img src="assets/star.svg" alt="star icon" />
+              Intels
+              <p class="badge">4 unread</p>
+            </div>
+            <div class="title title3">
+              <img src="assets/user.svg" alt="user icon" />
+              Leads
+              <p class="badge">4 unseen</p>
+            </div>
+            <div class="title title4">
+              <img src="assets/building.svg" alt="building icon" />
+              Accounts
+              <img class="arrow" src="assets/arrow.svg" alt="arrow icon" />
+
+              <div class="titleContent active">
+                <div class="line"></div>
+                <div class="content">
+                  <p>Manage all</p>
+                  <p>Track new accounts</p>
+                  <p>Bulk import</p>
+                </div>
+              </div>
+            </div>
+            <div class="title title5">
+              <img src="assets/setting.svg" alt="building icon" />
+              Preferences
+              <img class="arrow" src="assets/arrow.svg" alt="arrow icon" />
+
+              <div class="titleContent active">
+                <div class="line"></div>
+                <div class="content">
+                  <p>Product Focus</p>
+                  <p>Intel Preferences</p>
+                  <p>Load Persona</p>
+                </div>
+              </div>
+            </div>
+            <div class="title title6">
+              <img src="assets/link.svg" alt="building icon" />
+              Integration
+            </div>
+            <div class="title title5">
+              <img src="assets/team.svg" alt="building icon" />
+              Team
+            </div>
+            <div class="title title5">
+              <img src="assets/message.svg" alt="building icon" />
+              Help/Support
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="wrapper">
+            <div class="searchBox">
+              <img
+                class="searchIcon"
+                src="assets/search.svg"
+                alt="search icon"
+              />
+              <input
+                id="input"
+                oninput="fetchData()"
+                type="text"
+                placeholder="Search by account name or website"
+              />
+              <div class="bellIcon">
+                <img src="assets/bell.svg" alt="bellIcon" />
+                <div class="alert"></div>
+              </div>
+              <img src="assets/avatar.png" alt="avatar" class="avatar" />
+            </div>
+            <div class="heroImage">
+              <img src="assets/heroImage.png" alt="hero " class="heroImage" />
+            </div>
+            <div class="accountSection">
+              <div class="wrapper">
+                <div class="similarAccounts">
+                  <p class="title">Similar accounts</p>
+                  <div class="similarAccountsGrid"></div>
+                </div>
+                <div class="quickActions">
+                  <p>Quick Actions</p>
+                  <a href="#!">Track new account</a>
+                  <a href="#!">Bulk track accounts</a>
+                  <a href="#!">Manage accounts</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
